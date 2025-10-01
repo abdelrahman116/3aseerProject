@@ -40,28 +40,27 @@
 }
 
 ul.custom-list {
-  list-style: none; /* remove default bullets */
+  list-style: none;
   padding: 0;
   margin-right: 5rem;
 }
 
 ul.custom-list li {
   position: relative;
-  padding-right: 2rem; /* space for the dot in RTL */
+  padding-right: 2rem;
   margin-bottom: 1rem;
-  min-height: 20px; /* ensures enough height for dot */
-  display: block; /* make sure li is block-level */
+  min-height: 20px;
+  display: block;
 }
 
 ul.custom-list li::before {
-  content: "•"; /* fallback character dot */
+  content: "•";
   position: absolute;
-  right: 0; /* RTL: dot on the right */
+  right: 0;
   top: 50%;
   transform: translateY(-60%);
-  font-size: 65px; /* size of the dot */
-  color: #ea812c; /* dot color */
-  /* line-height: 1; */
+  font-size: 65px;
+  color: #ea812c;
   flex-shrink: 0;
 }
 
@@ -104,7 +103,6 @@ ul.custom-list li::before {
   border-radius: 26px;
   padding: 0.75rem;
   align-items: center;
-  /* gap: 1rem; */
   justify-content: space-around;
 }
 
@@ -113,7 +111,6 @@ ul.custom-list li::before {
   align-items: center;
   justify-content: space-around;
   margin: 0;
-  /* margin-top: 1.5rem; */
 }
 .topSection h2 {
   font-size: 44px;
@@ -138,21 +135,19 @@ ul.custom-list li::before {
 }
 .chefCard ul li,
 .paristaCard ul li {
-  position: relative; /* This is needed to position the ::before element */
-  padding-left: 35px; /* Adjust this value to create space for your icon */
-  margin-bottom: 10px; /* Add some space between list items */
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 10px;
 }
 
 .chefCard ul li::before,
 .paristaCard ul li::before {
-  content: url("./assets/Vector 2.svg"); /* Use content with url() to display the image */
-  position: relative; /* Position the icon relative to the list item */
-  right: 0; /* Align the icon to the left edge of the list item */
-  top: 50%; /* Align the icon vertically */
-  transform: translateY(
-    -50%
-  ); /* Adjust vertical alignment to center the icon */
-  width: 25px; /* Set the desired width of your icon */
+  content: url("./assets/Vector 2.svg");
+  position: relative;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
   height: 25px;
   margin-left: 10px;
 }
