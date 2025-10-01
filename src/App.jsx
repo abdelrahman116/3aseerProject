@@ -6,12 +6,15 @@ import "./Competion.css";
 import "./Introduction.css";
 import "./MarketAnalysis.css";
 import MarketAnalysis from "./components/MarketAnalysis";
+import GoalOfShare from "./components/GoalOfShare";
+import "./GoalOfShare.css";
 function App() {
   return (
     <>
       {/* <Sign /> */}
       {/* <Competition /> */}
-      <MarketAnalysis />
+      {/* <MarketAnalysis /> */}
+      <GoalOfShare />
       {/* <Introduction /> */}
     </>
   );

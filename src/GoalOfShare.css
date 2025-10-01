@@ -1,0 +1,23 @@
+.Share h1 {
+  font-size: 64px;
+  font-weight: 800;
+  margin: 4rem;
+  width: fit-content;
+}
+.Share {
+  position: relative;
+  height: 1000px;
+}
+.Share svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0 10rem;
+}
+.Share p {
+  max-width: 1092px;
+  margin-right: 7rem;
+  margin-bottom: 5rem;
+  font-weight: 400;
+  font-size: 34px;
+}
