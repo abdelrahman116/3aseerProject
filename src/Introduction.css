@@ -1,0 +1,156 @@
+.introduction {
+  background-color: #efede1;
+}
+.content2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  margin-bottom: 2rem;
+  height: auto;
+}
+.content2 img {
+  margin-left: 5rem;
+}
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+}
+.content2 p {
+  font-size: 32px;
+  font-weight: 400;
+  /* max-height: 266px; */
+  max-width: 762px;
+  margin-right: 5rem;
+}
+.content2 svg {
+  margin-right: 5rem;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.intro {
+  width: 100vw;
+  height: 170px;
+  background-color: #1c453d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro h1 {
+  color: white;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 800;
+}
+.photos {
+  display: flex;
+  margin-top: 4px;
+  justify-content: space-around;
+}
+.photos img {
+  width: 360px;
+  height: 250px;
+  margin: 0;
+}
+
+.photoStack {
+  display: grid;
+}
+.firstPhoto {
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+.threePhoto {
+  margin-top: 14rem;
+  height: 418px;
+  margin-left: 6rem;
+  border-radius: 24px;
+}
+.threePhoto .details {
+  height: 118px;
+  width: 350px;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  margin-top: -0.1rem;
+  background-color: #352c25;
+  color: white;
+  position: relative;
+}
+.threePhoto .details ul {
+  display: flex;
+  margin-top: 0.75rem;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 0.5rem;
+  margin-right: 1rem;
+}
+.threePhoto .details li {
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  justify-content: start;
+  margin-right: -4rem;
+}
+.Goals p {
+  font-size: 34px;
+  font-weight: 400;
+  margin-top: 1rem;
+  text-align: center;
+  max-width: 1092px;
+  margin-right: 4rem;
+}
+.Goals {
+  position: relative;
+}
+.Goals svg {
+  position: absolute;
+  left: 0;
+  top: 1rem;
+}
+.plan {
+  width: 1171px;
+  height: 659px;
+}
+.plan h2 {
+  margin: 1rem;
+  margin-right: 6rem;
+  font-size: 40px;
+  font-weight: 700;
+}
+.plan li {
+  font-size: 30px;
+  font-weight: 500;
+}
+ul.custom-list {
+  list-style: none; /* remove default bullets */
+  padding: 0;
+  margin-right: 5rem;
+  gap: 8px;
+  padding: 8px;
+}
+
+ul.custom-list li {
+  position: relative;
+  padding-right: 2rem; /* space for the dot in RTL */
+  margin-bottom: 1rem;
+  min-height: 20px; /* ensures enough height for dot */
+  display: block; /* make sure li is block-level */
+}
+
+ul.custom-list li::before {
+  content: "•"; /* fallback character dot */
+  position: absolute;
+  right: 0; /* RTL: dot on the right */
+  top: 50%;
+  transform: translateY(-60%);
+  font-size: 65px; /* size of the dot */
+  color: #ea812c; /* dot color */
+  /* line-height: 1; */
+  flex-shrink: 0;
+}

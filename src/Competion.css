@@ -1,0 +1,241 @@
+.content1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  margin-bottom: 2rem;
+}
+.content1 img {
+  margin-left: 5rem;
+}
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+}
+.content1 p {
+  font-size: 32px;
+  font-weight: 400;
+  max-height: 266px;
+  max-width: 762px;
+  margin-right: 5rem;
+}
+.content1 svg {
+  margin-right: 5rem;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.importance h1 {
+  margin-right: 5rem;
+}
+.importance p {
+  width: auto;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 17px;
+}
+
+ul.custom-list {
+  list-style: none; /* remove default bullets */
+  padding: 0;
+  margin-right: 5rem;
+}
+
+ul.custom-list li {
+  position: relative;
+  padding-right: 2rem; /* space for the dot in RTL */
+  margin-bottom: 1rem;
+  min-height: 20px; /* ensures enough height for dot */
+  display: block; /* make sure li is block-level */
+}
+
+ul.custom-list li::before {
+  content: "•"; /* fallback character dot */
+  position: absolute;
+  right: 0; /* RTL: dot on the right */
+  top: 50%;
+  transform: translateY(-60%);
+  font-size: 65px; /* size of the dot */
+  color: #ea812c; /* dot color */
+  /* line-height: 1; */
+  flex-shrink: 0;
+}
+
+.importance svg {
+  margin-right: 5rem;
+}
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 18rem;
+  margin-top: 4rem;
+}
+.main h1 {
+  font-size: 64px;
+  font-weight: 800;
+}
+.paristachef {
+  background-image: url("./assets/parista.png");
+  height: 750px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+  width: 100vw;
+}
+.cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: inherit;
+}
+
+.chefCard,
+.paristaCard {
+  background-color: white;
+  width: 488px;
+  height: 539px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 26px;
+  padding: 0.75rem;
+  align-items: center;
+  /* gap: 1rem; */
+  justify-content: space-around;
+}
+
+.topSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  /* margin-top: 1.5rem; */
+}
+.topSection h2 {
+  font-size: 44px;
+  font-weight: 700;
+}
+.topSection img {
+  width: 171px;
+  height: 78px;
+}
+.chefCard p,
+.paristaCard p {
+  margin: 0;
+  font-weight: 400;
+  color: #676767;
+  font-size: 24px;
+}
+.chefCard ul,
+.paristaCard ul {
+  font-size: 24px;
+  font-weight: 400;
+  list-style: none;
+}
+.chefCard ul li,
+.paristaCard ul li {
+  position: relative; /* This is needed to position the ::before element */
+  padding-left: 35px; /* Adjust this value to create space for your icon */
+  margin-bottom: 10px; /* Add some space between list items */
+}
+
+.chefCard ul li::before,
+.paristaCard ul li::before {
+  content: url("./assets/Vector 2.svg"); /* Use content with url() to display the image */
+  position: relative; /* Position the icon relative to the list item */
+  right: 0; /* Align the icon to the left edge of the list item */
+  top: 50%; /* Align the icon vertically */
+  transform: translateY(
+    -50%
+  ); /* Adjust vertical alignment to center the icon */
+  width: 25px; /* Set the desired width of your icon */
+  height: 25px;
+  margin-left: 10px;
+}
+
+.chefCard button,
+.paristaCard button {
+  width: 300px;
+  height: 62px;
+  background-color: #b6481a;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  border-radius: 20px;
+}
+.chefCard button {
+  background-color: #1c453d;
+}
+.chefCard button:hover,
+.paristaCard button:hover {
+  scale: 0.95;
+  transition: ease-in-out;
+  animation-duration: 500ms;
+}
+.pandul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5rem;
+}
+.formd {
+  background-color: #f1efe3;
+}
+
+.spoonser {
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5rem;
+  align-items: center;
+  position: relative;
+}
+.spoonser img {
+  width: 1420px;
+  object-fit: cover;
+  height: 425px;
+  border-radius: 24px;
+}
+.spoonser h2 {
+  font-size: 48px;
+  font-weight: 800;
+  color: white;
+}
+.spoonser .cook h2 {
+  position: absolute;
+  left: 6rem;
+  margin: 2rem;
+}
+.spoonser .paris h2 {
+  position: absolute;
+  right: 6rem;
+  margin: 2rem;
+}
+.spoonser .cook,
+.spoonser .paris {
+  position: relative;
+}
+.spoonser button:hover {
+  scale: 0.95;
+}
+.spoonser .cook button,
+.spoonser .paris button {
+  position: absolute;
+  font-size: 24px;
+  font-weight: 400;
+  color: white;
+  left: 45%;
+  background-color: #1c453d;
+  width: 300px;
+  height: 67px;
+  border-radius: 20px;
+  bottom: 10%;
+}
+.spoonser .paris button {
+  background-color: #b6481a;
+}
