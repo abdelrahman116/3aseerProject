@@ -1,0 +1,44 @@
+section.sponsorsAndParticipants .head {
+  position: relative;
+  margin-top: 1em;
+  padding-top: 2em;
+}
+
+section.sponsorsAndParticipants .real-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section.sponsorsAndParticipants img.top-title-ab {
+  position: absolute;
+  top: 0;
+}
+
+section.sponsorsAndParticipants img.left-title-ab {
+  position: absolute;
+  left: 1em;
+  top: 3em;
+}
+
+section.sponsorsAndParticipants img.right-title-ab {
+  position: absolute;
+  right: 1em;
+  top: 3em;
+}
+
+section.sponsorsAndParticipants .title {
+  font-weight: 800;
+  font-size: 64px;
+}
+
+section.sponsorsAndParticipants .description {
+  font-weight: 400;
+  font-size: 34px;
+}
+
+section.sponsorsAndParticipants .description-area {
+  width: 60%;
+  text-align: center;
+}

@@ -10,15 +10,17 @@ import MarketAnalysis from "./components/MarketAnalysis";
 import GoalOfShare from "./components/GoalOfShare";
 import "./GoalOfShare.css";
 import ContactUs from "./components/ContactUs";
+import "./components.css";
+import "./Carousel.css";
 function App() {
   return (
     <>
       {/* <Sign /> */}
-      {/* <Competition /> */}
-      {/* <MarketAnalysis /> */}
-      {/* <GoalOfShare /> */}
+      <Competition />
+      <MarketAnalysis />
+      <GoalOfShare />
       <ContactUs />
-      {/* <Introduction /> */}
+      <Introduction />
     </>
   );
 }
