@@ -1,4 +1,5 @@
 import "./App.css";
+import "./Contact.css";
 import Competition from "./components/Competition";
 import Introduction from "./components/Introduction";
 import Sign from "./components/Sign";
@@ -8,13 +9,15 @@ import "./MarketAnalysis.css";
 import MarketAnalysis from "./components/MarketAnalysis";
 import GoalOfShare from "./components/GoalOfShare";
 import "./GoalOfShare.css";
+import ContactUs from "./components/ContactUs";
 function App() {
   return (
     <>
       {/* <Sign /> */}
       {/* <Competition /> */}
       {/* <MarketAnalysis /> */}
-      <GoalOfShare />
+      {/* <GoalOfShare /> */}
+      <ContactUs />
       {/* <Introduction /> */}
     </>
   );
