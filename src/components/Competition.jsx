@@ -9,7 +9,6 @@ import SponsorsParticipants from "./components";
 import "../Carousel.css";
 import { useState, useRef, useEffect } from "react";
 import Carousel from "./Carousel";
-
 export default function Competition() {
   const sectionRef = useRef(null);
   const [isInView, setIsInView] = useState(false);
@@ -301,7 +300,12 @@ export default function Competition() {
         <div className="paris">
           <h2>راعي مسابقة باريستا الجنوب</h2>
           <img src={Paris} alt="" />
-          <Carousel title="راعي أول" logos={logos2} isInView={isInView} />
+          <Carousel
+            className="caro"
+            title="راعي أول"
+            logos={logos2}
+            isInView={isInView}
+          />
 
           <button>انضم الان كـ راعي</button>
         </div>

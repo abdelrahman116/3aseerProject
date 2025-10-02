@@ -16,6 +16,8 @@ h5,
 h6 {
   font-family: "Tajawal", sans-serif;
   font-style: normal;
+  display: flex;
+  justify-content: center;
 }
 
 h1 {

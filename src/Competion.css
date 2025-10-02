@@ -220,7 +220,7 @@ ul.custom-list li::before {
 }
 .spoonser .cook button,
 .spoonser .paris button {
-  position: absolute;
+  /* position: absolute; */
   font-size: 24px;
   font-weight: 400;
   color: white;
@@ -233,4 +233,9 @@ ul.custom-list li::before {
 }
 .spoonser .paris button {
   background-color: #b6481a;
+}
+.caro {
+  display: flex;
+  width: 100vw;
+  flex-wrap: wrap;
 }
